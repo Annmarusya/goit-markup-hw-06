@@ -470,7 +470,7 @@ button:hover, button:focus{
      height: 100%;
      opacity: 0;
      z-index: 999;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .modal {
@@ -515,10 +515,6 @@ button:hover, button:focus{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .exit-button-pic:hover,
-.exit-button-pic:focus {
-    
-} */
 
 .modal-subtitle {
     font-weight: 500;
@@ -653,3 +649,85 @@ button:hover, button:focus{
 .is-open {
     opacity: 1;
 }
+
+@media (min-width:320px) and (max-width:768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .nav-list,
+    .contacts-list {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    .header-logo {
+        padding: 16px 0;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    #icon-nav-list {
+        position: static;
+        width: 24px;
+        height: 24px;
+        margin: 16px 0;
+        clip-path: none;
+    }
+
+    .hero {
+        padding: 72px 0;
+        max-width: 320px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        line-height: 1.11;
+        max-width: 216px;
+    }
+
+    .hero-button {
+        margin-top: 72px;
+
+    }
+
+    .icon-features {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    .features-list {
+        flex-direction: column;
+        gap: 72px;
+    }
+
+    .features-list-item {
+        flex-basis: 100%;
+    }
+
+    .list-text {
+        font-weight: 500;
+    }
+
+    .list-subtitle {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+    }
