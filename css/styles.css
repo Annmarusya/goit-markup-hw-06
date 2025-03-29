@@ -653,7 +653,7 @@ button:hover, button:focus{
 @media (min-width:320px) and (max-width:768px) {
     .container {
         max-width: 768px;
-    }
+    }}
 
     .nav-list,
     .contacts-list {
@@ -721,13 +721,72 @@ button:hover, button:focus{
         flex-basis: 100%;
     }
 
-    .list-text {
+    .features-list-text {
         font-weight: 500;
     }
 
-    .list-subtitle {
+    .features-list-subtitle {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
         text-align: center;
+    }
+
+    .team-list {
+        gap: 72px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-list-item {
+        width: 264px;
+    }
+
+    .portfolio-list {
+        flex-direction: column;
+        gap: 48px;
+        align-items: center;
+    }
+
+    .portfolio-list-item {
+        width: 288px;
+    }
+
+    .page-footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 72px;
+    }
+
+    .logo-text {
+        margin: 0;
+    }
+
+    .page-footer-text {
+        max-width: 288px;
+    }
+
+    .footer-logo {
+    width: 100%;
+    text-align: center;
+    }
+
+    .social-media {
+        text-align: center;
+    }
+
+    .modal-form {
+        flex-direction: column;
+        gap: 16px;
+        align-content: center;
+    }
+
+    .subscribe {
+        margin: 0;
+        text-align: center;
+    }
+
+    .subscribe-button {
+        margin: 0 auto;
     }
